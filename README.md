@@ -1,5 +1,2 @@
-This program contains one method “fit_one_method” which sets the model, performs leave-one-out cross validation on features and target passed as parameters and prints out the evaluation results. 
+# merge_classifier
 
-We used six models which are support vector machine, random forest, naïve bayes, logistic regression, decision tree and logistic lasso. In our program there are three types of calls to “fit_one_method”.  We first removed zero columns from features. The first type calls “fit_one_method” with models’name, features and target. Then we performed principal component analysis on features and we chose to use the first 20 components with 90% of the variance explained. The second type calls “fit_one_method” with models’ name, features after pca and target. Lastly, the third type calls with models’ name, features and target but specifying in models’ name that separate pca will be performed on each round of leave-one-out cross validation.
-
-In the end, we got the results. The decision tree with features after pca got the highest accuracy which is 88.5.
