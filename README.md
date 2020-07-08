@@ -25,7 +25,7 @@ y_est11 = fit_one_method('decision_tree', X_pca, Y)
 y_est12 = fit_one_method('logistic_lasso', X_pca, Y)
 ```
 Lastly, the third type calls with models’ name, features and target but specifying in models’ name that separate pca will be performed on each round of leave-one-out cross validation.
-y_est12 = fit_one_method('logistic_lasso', X_pca, Y)
+
 ```
 y_est13 = fit_one_method('svm_pca', X, Y)
 y_est14 = fit_one_method('random_forest_pca', X, Y)
